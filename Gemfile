@@ -2,13 +2,19 @@
 source "https://rubygems.org"
 
 gem 'sinatra'
-gem 'thin'
+# gem 'thin'
+gem 'activerecord', '4.2.5'
+gem 'sinatra-activerecord'
+gem 'rake'
+
 gem 'require_all'
 
 
 group :development do
 	gem 'shotgun'
 	gem 'pry'
+  gem 'sqlite3'
+  gem 'tux'
 end
     
 group :test do
@@ -16,3 +22,5 @@ group :test do
   gem 'capybara'
   gem 'rack-test'
 end
+
+
